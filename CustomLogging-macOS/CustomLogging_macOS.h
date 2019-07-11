@@ -5,7 +5,7 @@
 //  Created by trial on 7/8/19.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for CustomLogging_macOS.
 FOUNDATION_EXPORT double CustomLogging_macOSVersionNumber;
