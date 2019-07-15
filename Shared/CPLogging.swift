@@ -18,7 +18,7 @@ public class CPLogging {
     }
     
     //MARK: Singleton Instance
-    static let instance: CPLogging = CPLogging()
+    public static let instance: CPLogging = CPLogging()
     
     private init() {}
     

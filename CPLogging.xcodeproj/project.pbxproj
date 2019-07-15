@@ -6,6 +6,21 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		4DF41FD022DA266600CEFC65 /* CPLogging-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4DF41FD122DA266600CEFC65 /* Build configuration list for PBXAggregateTarget "CPLogging-Universal" */;
+			buildPhases = (
+				4DF41FD422DA268B00CEFC65 /* ShellScript */,
+			);
+			dependencies = (
+				4DF41FEA22DA4E3E00CEFC65 /* PBXTargetDependency */,
+			);
+			name = "CPLogging-Universal";
+			productName = "CPLogging-Universal";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		A1602A3022D3758500A08FEA /* CPLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1602A2622D3758500A08FEA /* CPLogging.framework */; };
 		A1602A3522D3758500A08FEA /* CustomLogging_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1602A3422D3758500A08FEA /* CustomLogging_iOSTests.swift */; };
@@ -20,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4DF41FE922DA4E3E00CEFC65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1602A1B22D3757500A08FEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1602A2522D3758500A08FEA;
+			remoteInfo = "CPLogging-iOS";
+		};
 		A1602A3122D3758500A08FEA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1602A1B22D3757500A08FEA /* Project object */;
@@ -40,13 +62,13 @@
 		A1602A2622D3758500A08FEA /* CPLogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CPLogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1602A2922D3758500A08FEA /* CustomLogging_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLogging_iOS.h; sourceTree = "<group>"; };
 		A1602A2A22D3758500A08FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1602A2F22D3758500A08FEA /* CustomLogging-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CustomLogging-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1602A2F22D3758500A08FEA /* CPLogging-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CPLogging-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1602A3422D3758500A08FEA /* CustomLogging_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLogging_iOSTests.swift; sourceTree = "<group>"; };
 		A1602A3622D3758500A08FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1602A4322D3759400A08FEA /* CPLogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CPLogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1602A4522D3759400A08FEA /* CustomLogging_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLogging_macOS.h; sourceTree = "<group>"; };
 		A1602A4622D3759400A08FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1602A4B22D3759400A08FEA /* CustomLogging-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CustomLogging-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1602A4B22D3759400A08FEA /* CPLogging-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CPLogging-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1602A5022D3759400A08FEA /* CustomLogging_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLogging_macOSTests.swift; sourceTree = "<group>"; };
 		A1602A5222D3759400A08FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1602A5B22D3761000A08FEA /* CPLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPLogging.swift; sourceTree = "<group>"; };
@@ -90,11 +112,12 @@
 			isa = PBXGroup;
 			children = (
 				A1602A5A22D3759800A08FEA /* Shared */,
-				A1602A2822D3758500A08FEA /* CustomLogging-iOS */,
-				A1602A3322D3758500A08FEA /* CustomLogging-iOSTests */,
-				A1602A4422D3759400A08FEA /* CustomLogging-macOS */,
-				A1602A4F22D3759400A08FEA /* CustomLogging-macOSTests */,
+				A1602A2822D3758500A08FEA /* CPLogging-iOS */,
+				A1602A3322D3758500A08FEA /* CPLogging-iOSTests */,
+				A1602A4422D3759400A08FEA /* CPLogging-macOS */,
+				A1602A4F22D3759400A08FEA /* CPLogging-macOSTests */,
 				A1602A2722D3758500A08FEA /* Products */,
+				F367078EDF9F0D2335635C8A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,47 +125,47 @@
 			isa = PBXGroup;
 			children = (
 				A1602A2622D3758500A08FEA /* CPLogging.framework */,
-				A1602A2F22D3758500A08FEA /* CustomLogging-iOSTests.xctest */,
+				A1602A2F22D3758500A08FEA /* CPLogging-iOSTests.xctest */,
 				A1602A4322D3759400A08FEA /* CPLogging.framework */,
-				A1602A4B22D3759400A08FEA /* CustomLogging-macOSTests.xctest */,
+				A1602A4B22D3759400A08FEA /* CPLogging-macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A1602A2822D3758500A08FEA /* CustomLogging-iOS */ = {
+		A1602A2822D3758500A08FEA /* CPLogging-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				A1602A2922D3758500A08FEA /* CustomLogging_iOS.h */,
 				A1602A2A22D3758500A08FEA /* Info.plist */,
 			);
-			path = "CustomLogging-iOS";
+			path = "CPLogging-iOS";
 			sourceTree = "<group>";
 		};
-		A1602A3322D3758500A08FEA /* CustomLogging-iOSTests */ = {
+		A1602A3322D3758500A08FEA /* CPLogging-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
 				A1602A3422D3758500A08FEA /* CustomLogging_iOSTests.swift */,
 				A1602A3622D3758500A08FEA /* Info.plist */,
 			);
-			path = "CustomLogging-iOSTests";
+			path = "CPLogging-iOSTests";
 			sourceTree = "<group>";
 		};
-		A1602A4422D3759400A08FEA /* CustomLogging-macOS */ = {
+		A1602A4422D3759400A08FEA /* CPLogging-macOS */ = {
 			isa = PBXGroup;
 			children = (
 				A1602A4522D3759400A08FEA /* CustomLogging_macOS.h */,
 				A1602A4622D3759400A08FEA /* Info.plist */,
 			);
-			path = "CustomLogging-macOS";
+			path = "CPLogging-macOS";
 			sourceTree = "<group>";
 		};
-		A1602A4F22D3759400A08FEA /* CustomLogging-macOSTests */ = {
+		A1602A4F22D3759400A08FEA /* CPLogging-macOSTests */ = {
 			isa = PBXGroup;
 			children = (
 				A1602A5022D3759400A08FEA /* CustomLogging_macOSTests.swift */,
 				A1602A5222D3759400A08FEA /* Info.plist */,
 			);
-			path = "CustomLogging-macOSTests";
+			path = "CPLogging-macOSTests";
 			sourceTree = "<group>";
 		};
 		A1602A5A22D3759800A08FEA /* Shared */ = {
@@ -151,6 +174,13 @@
 				A1602A5B22D3761000A08FEA /* CPLogging.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		F367078EDF9F0D2335635C8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,9 +205,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A1602A2522D3758500A08FEA /* CustomLogging-iOS */ = {
+		A1602A2522D3758500A08FEA /* CPLogging-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1602A3822D3758500A08FEA /* Build configuration list for PBXNativeTarget "CustomLogging-iOS" */;
+			buildConfigurationList = A1602A3822D3758500A08FEA /* Build configuration list for PBXNativeTarget "CPLogging-iOS" */;
 			buildPhases = (
 				A1602A2122D3758500A08FEA /* Headers */,
 				A1602A2222D3758500A08FEA /* Sources */,
@@ -188,14 +218,14 @@
 			);
 			dependencies = (
 			);
-			name = "CustomLogging-iOS";
+			name = "CPLogging-iOS";
 			productName = "CustomLogging-iOS";
 			productReference = A1602A2622D3758500A08FEA /* CPLogging.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A1602A2E22D3758500A08FEA /* CustomLogging-iOSTests */ = {
+		A1602A2E22D3758500A08FEA /* CPLogging-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1602A3B22D3758500A08FEA /* Build configuration list for PBXNativeTarget "CustomLogging-iOSTests" */;
+			buildConfigurationList = A1602A3B22D3758500A08FEA /* Build configuration list for PBXNativeTarget "CPLogging-iOSTests" */;
 			buildPhases = (
 				A1602A2B22D3758500A08FEA /* Sources */,
 				A1602A2C22D3758500A08FEA /* Frameworks */,
@@ -206,14 +236,14 @@
 			dependencies = (
 				A1602A3222D3758500A08FEA /* PBXTargetDependency */,
 			);
-			name = "CustomLogging-iOSTests";
+			name = "CPLogging-iOSTests";
 			productName = "CustomLogging-iOSTests";
-			productReference = A1602A2F22D3758500A08FEA /* CustomLogging-iOSTests.xctest */;
+			productReference = A1602A2F22D3758500A08FEA /* CPLogging-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A1602A4222D3759400A08FEA /* CustomLogging-macOS */ = {
+		A1602A4222D3759400A08FEA /* CPLogging-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1602A5422D3759400A08FEA /* Build configuration list for PBXNativeTarget "CustomLogging-macOS" */;
+			buildConfigurationList = A1602A5422D3759400A08FEA /* Build configuration list for PBXNativeTarget "CPLogging-macOS" */;
 			buildPhases = (
 				A1602A3E22D3759400A08FEA /* Headers */,
 				A1602A3F22D3759400A08FEA /* Sources */,
@@ -224,14 +254,14 @@
 			);
 			dependencies = (
 			);
-			name = "CustomLogging-macOS";
+			name = "CPLogging-macOS";
 			productName = "CustomLogging-macOS";
 			productReference = A1602A4322D3759400A08FEA /* CPLogging.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A1602A4A22D3759400A08FEA /* CustomLogging-macOSTests */ = {
+		A1602A4A22D3759400A08FEA /* CPLogging-macOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1602A5722D3759400A08FEA /* Build configuration list for PBXNativeTarget "CustomLogging-macOSTests" */;
+			buildConfigurationList = A1602A5722D3759400A08FEA /* Build configuration list for PBXNativeTarget "CPLogging-macOSTests" */;
 			buildPhases = (
 				A1602A4722D3759400A08FEA /* Sources */,
 				A1602A4822D3759400A08FEA /* Frameworks */,
@@ -242,9 +272,9 @@
 			dependencies = (
 				A1602A4E22D3759400A08FEA /* PBXTargetDependency */,
 			);
-			name = "CustomLogging-macOSTests";
+			name = "CPLogging-macOSTests";
 			productName = "CustomLogging-macOSTests";
-			productReference = A1602A4B22D3759400A08FEA /* CustomLogging-macOSTests.xctest */;
+			productReference = A1602A4B22D3759400A08FEA /* CPLogging-macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -254,8 +284,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1020;
 				TargetAttributes = {
+					4DF41FD022DA266600CEFC65 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					A1602A2522D3758500A08FEA = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -277,16 +310,18 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A1602A1A22D3757500A08FEA;
 			productRefGroup = A1602A2722D3758500A08FEA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1602A2522D3758500A08FEA /* CustomLogging-iOS */,
-				A1602A2E22D3758500A08FEA /* CustomLogging-iOSTests */,
-				A1602A4222D3759400A08FEA /* CustomLogging-macOS */,
-				A1602A4A22D3759400A08FEA /* CustomLogging-macOSTests */,
+				A1602A2522D3758500A08FEA /* CPLogging-iOS */,
+				A1602A2E22D3758500A08FEA /* CPLogging-iOSTests */,
+				A1602A4222D3759400A08FEA /* CPLogging-macOS */,
+				A1602A4A22D3759400A08FEA /* CPLogging-macOSTests */,
+				4DF41FD022DA266600CEFC65 /* CPLogging-Universal */,
 			);
 		};
 /* End PBXProject section */
@@ -321,6 +356,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DF41FD422DA268B00CEFC65 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Merge Script\n\n# 1\n# Set bash script to exit immediately if any commands fail.\nset -e\n\n# 2\n# Setup some constants for use later on.\nFRAMEWORK_NAME=\"CPLogging\"\n\n# 3\n# If remnants from a previous build exist, delete them.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n\n# 4\n# Build the framework for device and for simulator (using\n# all needed architectures).\nxcodebuild -target \"${FRAMEWORK_NAME}-iOS\" -configuration Release -arch arm64 -arch armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk \"iphoneos\"\nxcodebuild -target \"${FRAMEWORK_NAME}-iOS\" -configuration Release -arch x86_64 -arch i386 only_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\n# 5\n# Remove .framework file if exists on Desktop from previous run.\nif [ -d \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\nfi\n\n# 6\n# Copy the device version of framework to Desktop.\ncp -r \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\n\n# 7\n# Replace the framework executable within the framework with\n# a new version created by merging the device and simulator\n# frameworks' executables with lipo.\nlipo -create -output \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# 8\n# Copy the Swift module mappings for the simulator into the\n# framework.  The device mappings already exist from step 6.\ncp -r \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# 9\n# Delete the most recent build.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1602A2222D3758500A08FEA /* Sources */ = {
@@ -360,28 +415,113 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4DF41FEA22DA4E3E00CEFC65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1602A2522D3758500A08FEA /* CPLogging-iOS */;
+			targetProxy = 4DF41FE922DA4E3E00CEFC65 /* PBXContainerItemProxy */;
+		};
 		A1602A3222D3758500A08FEA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A1602A2522D3758500A08FEA /* CustomLogging-iOS */;
+			target = A1602A2522D3758500A08FEA /* CPLogging-iOS */;
 			targetProxy = A1602A3122D3758500A08FEA /* PBXContainerItemProxy */;
 		};
 		A1602A4E22D3759400A08FEA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A1602A4222D3759400A08FEA /* CustomLogging-macOS */;
+			target = A1602A4222D3759400A08FEA /* CPLogging-macOS */;
 			targetProxy = A1602A4D22D3759400A08FEA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4DF41FD222DA266600CEFC65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 x86_64 arm64 armv7s armv7 arm64e";
+			};
+			name = Debug;
+		};
+		4DF41FD322DA266600CEFC65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 x86_64 arm64 armv7s armv7 arm64e";
+			};
+			name = Release;
+		};
 		A1602A1F22D3757500A08FEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
 		A1602A2022D3757500A08FEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
@@ -417,7 +557,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -442,9 +582,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "CustomLogging-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CPLogging-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,8 +599,9 @@
 				SKIP_INSTALL = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -498,7 +639,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -517,9 +658,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "CustomLogging-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CPLogging-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,9 +674,10 @@
 				SKIP_INSTALL = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -609,7 +751,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -675,7 +817,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -740,14 +882,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "CustomLogging-macOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CPLogging-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -757,7 +899,7 @@
 				SKIP_INSTALL = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -816,14 +958,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "CustomLogging-macOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CPLogging-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaditek.CustomLogging;
@@ -832,7 +974,7 @@
 				SKIP_INSTALL = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -907,7 +1049,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -973,13 +1115,22 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4DF41FD122DA266600CEFC65 /* Build configuration list for PBXAggregateTarget "CPLogging-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF41FD222DA266600CEFC65 /* Debug */,
+				4DF41FD322DA266600CEFC65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A1602A1E22D3757500A08FEA /* Build configuration list for PBXProject "CPLogging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -989,7 +1140,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1602A3822D3758500A08FEA /* Build configuration list for PBXNativeTarget "CustomLogging-iOS" */ = {
+		A1602A3822D3758500A08FEA /* Build configuration list for PBXNativeTarget "CPLogging-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1602A3922D3758500A08FEA /* Debug */,
@@ -998,7 +1149,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1602A3B22D3758500A08FEA /* Build configuration list for PBXNativeTarget "CustomLogging-iOSTests" */ = {
+		A1602A3B22D3758500A08FEA /* Build configuration list for PBXNativeTarget "CPLogging-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1602A3C22D3758500A08FEA /* Debug */,
@@ -1007,7 +1158,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1602A5422D3759400A08FEA /* Build configuration list for PBXNativeTarget "CustomLogging-macOS" */ = {
+		A1602A5422D3759400A08FEA /* Build configuration list for PBXNativeTarget "CPLogging-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1602A5522D3759400A08FEA /* Debug */,
@@ -1016,7 +1167,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1602A5722D3759400A08FEA /* Build configuration list for PBXNativeTarget "CustomLogging-macOSTests" */ = {
+		A1602A5722D3759400A08FEA /* Build configuration list for PBXNativeTarget "CPLogging-macOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1602A5822D3759400A08FEA /* Debug */,
