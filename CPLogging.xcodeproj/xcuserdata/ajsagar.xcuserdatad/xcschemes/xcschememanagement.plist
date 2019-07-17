@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>CPLogging-Universal.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>CustomLogging-iOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>CustomLogging-macOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4DF41FD022DA266600CEFC65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1602A2522D3758500A08FEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1602A2E22D3758500A08FEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1602A4222D3759400A08FEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1602A4A22D3759400A08FEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

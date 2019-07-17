@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class CPLogging {
+@objc public class CPLogging: NSObject {
     
     fileprivate enum LogType: Int {
         case info = 0
@@ -18,9 +18,9 @@ public class CPLogging {
     }
     
     //MARK: Singleton Instance
-    public static let instance: CPLogging = CPLogging()
+    @objc public static let instance: CPLogging = CPLogging()
     
-    private init() {}
+    private override init() {}
     
     //MARK: Properties
     private var isLogEnabled: Bool! = false
@@ -28,28 +28,28 @@ public class CPLogging {
     
     //MARK: Function
     //Setup
-    public func setupLogging(isLogEnabled: Bool = true, isTimestampShown: Bool = true) {
+    @objc public func setupLogging(isLogEnabled: Bool = true, isTimestampShown: Bool = true) {
         self.isLogEnabled = isLogEnabled
         self.isTimestampShown = isTimestampShown
     }
     
-    public func debugInfo(_ string: String) {
+    @objc public func debugInfo(_ string: String) {
         log(message: string, type: .info)
     }
     
-    public func debugVerbose(_ string: String) {
+    @objc public func debugVerbose(_ string: String) {
         log(message: string, type: .verbose)
     }
     
-    public func debugWarning(_ string: String) {
+    @objc public func debugWarning(_ string: String) {
         log(message: string, type: .warning)
     }
-    
-    public func debugError(_ string: String) {
+   
+    @objc public func debugError(_ string: String) {
         log(message: string, type: .error)
     }
     
-    public func debugSuccess(_ string: String) {
+    @objc public func debugSuccess(_ string: String) {
         log(message: string, type: .successs)
     }
     
